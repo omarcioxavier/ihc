@@ -19,17 +19,13 @@ namespace colorcom.Models.NotaFiscal
 
         public DateTime en_dataEmissao { get; set; }
 
-        public string en_rua { get; set; }
-
-        public string en_numeroEndereco { get; set; }
-
-        public string en_bairro { get; set; }
-
-        public string en_cep { get; set; }
+        public string en_endereco { get; set; }
 
         public int en_us_cod { get; set; }
 
         public int en_em_cod { get; set; }
+
+        public int en_ci_cod { get; set; }
 
         //OBJETOS
         public usuario usuario { get; set; }
