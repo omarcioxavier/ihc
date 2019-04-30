@@ -1,5 +1,5 @@
 /*
-USE colorcommerce;
+USE colorcommercedb;
 */
 INSERT INTO tipoUsuario (tu_descricao) VALUES
 ('Administrador'),

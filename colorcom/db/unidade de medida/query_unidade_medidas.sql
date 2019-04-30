@@ -1,10 +1,10 @@
 /*
-USE colorcommerce;
+USE colorcommercedb;
 */
-INSERT INTO tipoUsuario (tu_descricao) VALUES
-('Administrador'),
-('Usuário');
+INSERT INTO unidadeMedida (um_sigla, um_descricao) VALUES
+('un','Unidade'),
+('kg','Quilo');
 
 /*
-SELECT * FROM tipoUsuario;
+SELECT * FROM unidadeMedida;
 */

@@ -55,7 +55,10 @@ F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\Microsoft.CodeDom.Prov
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\Microsoft.Web.Infrastructure.dll
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\Newtonsoft.Json.dll
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Diagnostics.DiagnosticSource.dll
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Net.Http.Formatting.dll
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.Helpers.dll
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.Http.dll
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.Http.WebHost.dll
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.Mvc.dll
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.Optimization.dll
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.Razor.dll
@@ -65,6 +68,9 @@ F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.WebPages.Ra
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\WebGrease.dll
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\EntityFramework.xml
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\EntityFramework.SqlServer.xml
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Net.Http.Formatting.xml
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.Http.xml
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.Http.WebHost.xml
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.Helpers.xml
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.Mvc.xml
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Web.Optimization.xml
@@ -77,8 +83,10 @@ F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\Antlr3.Runtime.pdb
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\System.Diagnostics.DiagnosticSource.xml
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csprojAssemblyReference.cache
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csproj.CoreCompileInputs.cache
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csproj.CopyComplete
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.dll
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.pdb
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csprojAssemblyReference.cache
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.Migrations.FirstMigration.resources
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csproj.GenerateResource.cache

@@ -1,5 +1,5 @@
 /*
-USE colorcommerce;
+USE colorcommercedb;
 */
 INSERT INTO categoria (ca_descricao, ca_cod_subcategoria) VALUES
 ('Tintas', 1),

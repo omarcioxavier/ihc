@@ -1,5 +1,5 @@
 /*
-USE colorcommerce;
+USE colorcommercedb;
 */
 INSERT INTO tipoEmitente (te_descricao) VALUES
 ('Pessoa Física'),
