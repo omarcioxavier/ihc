@@ -9,15 +9,15 @@ using System.Data.Entity;
 
 namespace colorcom.DAL
 {
-    public class colorcomContex : DbContext
+    public class colorcomContext : DbContext
     {
         //Construtor que chama minha string de conexão do web.config
-        public colorcomContex() : base("colorcomcnnstr") { }
+        public colorcomContext() : base("colorcomcnnstr") { }
 
         //Construtor para a classe
-        public static colorcomContex Create()
+        public static colorcomContext Create()
         {
-            return new colorcomContex();
+            return new colorcomContext();
         }
 
         //Tabelas

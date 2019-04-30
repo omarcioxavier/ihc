@@ -1,5 +1,5 @@
 /*
-USE colorcommerce;
+USE colorcommercedb;
 */
 INSERT INTO cidade (ci_nome, ci_es_cod) VALUES
 ('Jarinu', 26),

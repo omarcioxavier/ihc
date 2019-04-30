@@ -1,17 +1,25 @@
 ﻿using colorcom.Models.Estoque;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace colorcom.Models.Item
 {
+    [Table("item")]
     public class item
     {
         //TABELA
+        [Key]
         public int it_cod { get; set; }
 
+        [MaxLength(100)]
         public string ti_titulo { get; set; }
 
+        [MaxLength(100)]
         public string it_descricao { get; set; }
 
+        [MaxLength(100)]
+        [Index(IsUnique = true)]
         public string it_ean { get; set; }
 
         public float it_preco_compra { get; set; }
@@ -26,14 +34,16 @@ namespace colorcom.Models.Item
 
         public bool it_status { get; set; }
 
+        [Required]
         public int it_ca_cod { get; set; }
 
+        [Required]
         public int it_um_cod { get; set; }
 
         //OBJETOS
         public categoria categoria { get; set; }
 
-        public unidadeMedida unidade_medida { get; set; }
+        public unidadeMedida unidadeMedida { get; set; }
 
         public ICollection<logItem> logsItem { get; set; }
 

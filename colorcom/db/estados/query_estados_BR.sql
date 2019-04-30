@@ -1,5 +1,5 @@
 /*
-USE colorcommerce;
+USE colorcommercedb;
 */
 INSERT INTO estado (es_nome, es_uf) VALUES
 ('Acre', 'AC'),
