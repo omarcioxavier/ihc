@@ -14,8 +14,11 @@ namespace colorcom.Models.Localizacao
         [MaxLength(100)]
         public string ci_nome { get; set; }
 
-        public virtual estado ci_es_cod { get; set; }
+        public int ci_es_cod { get; set; }
 
-        public ICollection<emitente> emitentes { get; set; }
+        [ForeignKey("ci_es_cod")]
+        public virtual estado estado { get; set; }
+
+        public virtual ICollection<emitente> emitentes { get; set; }
     }
 }

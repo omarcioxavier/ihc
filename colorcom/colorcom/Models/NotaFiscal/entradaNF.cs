@@ -26,12 +26,21 @@ namespace colorcom.Models.NotaFiscal
         [MaxLength(100)]
         public string en_endereco { get; set; }
 
-        public usuario en_us_cod { get; set; }
+        public int en_us_cod { get; set; }
 
-        public emitente en_em_cod { get; set; }
+        public int en_em_cod { get; set; }
 
-        public cidade en_ci_cod { get; set; }
+        public int en_ci_cod { get; set; }
 
-        public ICollection<movimentoEstoque> moviemntosEstoque { get; set; }
+        [ForeignKey("en_us_cod")]
+        public virtual usuario usuario { get; set; }
+
+        [ForeignKey("en_em_cod")]
+        public virtual emitente emitente { get; set; }
+
+        [ForeignKey("en_ci_cod")]
+        public virtual cidade cidade { get; set; }
+
+        public virtual ICollection<movimentoEstoque> moviemntosEstoque { get; set; }
     }
 }

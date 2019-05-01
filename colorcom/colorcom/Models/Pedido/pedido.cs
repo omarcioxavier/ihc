@@ -16,10 +16,19 @@ namespace colorcom.Models.Pedidos
 
         public DateTime pe_dataHora { get; set; }
 
-        public usuario pe_us_cod { get; set; }
+        public int pe_us_cod { get; set; }
 
-        public emitente pe_em_cod { get; set; }
+        public int pe_em_cod { get; set; }
 
-        public itensPedido pe_ip_cod { get; set; }
+        public int pe_ip_cod { get; set; }
+
+        [ForeignKey("pe_us_cod")]
+        public virtual usuario usuario { get; set; }
+
+        [ForeignKey("pe_em_cod")]
+        public virtual emitente emitente { get; set; }
+
+        [ForeignKey("pe_ip_cod")]
+        public virtual itensPedido itensPedido { get; set; }
     }
 }

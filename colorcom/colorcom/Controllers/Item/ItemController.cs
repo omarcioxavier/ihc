@@ -19,10 +19,7 @@ namespace colorcom.Controllers.Item
         // GET: Item
         public ActionResult Index()
         {
-            var itens = _context.itens
-                .Include(i => i.it_ca_cod)
-                .Include(i => i.it_um_cod)
-                .ToList();
+            var itens = _context.itens.ToList();
             return View(itens);
         }
     }

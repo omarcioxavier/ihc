@@ -14,6 +14,9 @@ namespace colorcom.Models.Item
 
         public DateTime li_dataHora { get; set; }
 
-        public item li_it_cod { get; set; }
+        public int li_it_cod { get; set; }
+
+        [ForeignKey("li_it_cod")]
+        public virtual item item { get; set; }
     }
 }

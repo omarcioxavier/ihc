@@ -16,6 +16,6 @@ namespace colorcom.Models.Item
         [MaxLength(100)]
         public string um_descricao { get; set; }
 
-        public ICollection<item> itens { get; set; }
+        public virtual ICollection<item> itens { get; set; }
     }
 }

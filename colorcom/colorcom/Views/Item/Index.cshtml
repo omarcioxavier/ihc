@@ -6,7 +6,13 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ti_titulo)
+            @Html.DisplayNameFor(model => model.categoria.ca_descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.unidadeMedida.um_sigla)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.it_titulo)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.it_descricao)
@@ -32,19 +38,19 @@
         <th>
             @Html.DisplayNameFor(model => model.it_status)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.it_ca_cod)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.it_um_cod)
-        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.ti_titulo)
+            @Html.DisplayFor(modelItem => item.categoria.ca_descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.unidadeMedida.um_sigla)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it_titulo)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.it_descricao)
@@ -69,12 +75,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.it_status)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.it_ca_cod)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.it_um_cod)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.it_cod }) |

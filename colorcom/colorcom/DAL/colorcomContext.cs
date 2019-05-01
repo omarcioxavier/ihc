@@ -35,5 +35,7 @@ namespace colorcom.DAL
         public DbSet<tipoUsuario> tiposUsuarios { get; set; }
         public DbSet<unidadeMedida> unidadesMedida { get; set; }
         public DbSet<usuario> usuarios { get; set; }
+
+        public System.Data.Entity.DbSet<colorcom.Models.Item.categoria> categorias { get; set; }
     }
 }

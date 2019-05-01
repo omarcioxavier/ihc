@@ -16,6 +16,6 @@ namespace colorcom.Models.Localizacao
         [MaxLength(2)]
         public string es_uf { get; set; }
 
-        public ICollection<cidade> cidades { get; set; }
+        public virtual ICollection<cidade> cidades { get; set; }
     }
 }

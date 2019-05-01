@@ -42,12 +42,18 @@ namespace colorcom.Models.Emitente
         [Index(IsUnique = true)]
         public string em_inscricaoEstadual { get; set; }
 
-        public cidade em_ci_cod { get; set; }
+        public int em_ci_cod { get; set; }
 
-        public tipoEmitente em_te_cod { get; set; }
+        public int em_te_cod { get; set; }
 
-        public ICollection<pedido> pedidos { get; set; }
+        [ForeignKey("em_ci_cod ")]
+        public virtual cidade cidade { get; set; }
 
-        public ICollection<entradaNF> entradasNF { get; set; }
+        [ForeignKey("em_te_cod ")]
+        public virtual tipoEmitente tipoEmitente { get; set; }
+
+        public virtual ICollection<pedido> pedidos { get; set; }
+
+        public virtual ICollection<entradaNF> entradasNF { get; set; }
     }
 }

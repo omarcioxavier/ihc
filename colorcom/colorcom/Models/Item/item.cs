@@ -33,12 +33,18 @@ namespace colorcom.Models.Item
 
         public bool it_status { get; set; }
 
-        public categoria it_ca_cod { get; set; }
+        public int it_ca_cod { get; set; }
 
-        public unidadeMedida it_um_cod { get; set; }
+        public int it_um_cod { get; set; }
 
-        public ICollection<logItem> logsItem { get; set; }
+        [ForeignKey("it_ca_cod")]
+        public virtual categoria categoria { get; set; }
 
-        public ICollection<movimentoEstoque> movimentosEstoque { get; set; }
+        [ForeignKey("it_um_cod")]
+        public virtual unidadeMedida unidadeMedida { get; set; }
+
+        public virtual ICollection<logItem> logsItem { get; set; }
+
+        public virtual ICollection<movimentoEstoque> movimentosEstoque { get; set; }
     }
 }

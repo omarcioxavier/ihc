@@ -16,8 +16,11 @@ namespace colorcom.Models.NotaFiscal
 
         public int sn_serie { get; set; }
 
-        public pedido sn_pe_cod { get; set; }
+        public int sn_pe_cod { get; set; }
 
-        public ICollection<movimentoEstoque> movimentosEstoque { get; set; }
+        [ForeignKey("sn_pe_cod")]
+        public virtual pedido pedido { get; set; }
+
+        public virtual ICollection<movimentoEstoque> movimentosEstoque { get; set; }
     }
 }
