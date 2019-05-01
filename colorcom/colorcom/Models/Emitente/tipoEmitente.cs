@@ -14,6 +14,6 @@ namespace colorcom.Models.Usuario
         [MaxLength(100)]
         public string te_descricao { get; set; }
 
-        public ICollection<emitente> emitentes { get; set; }
+        public virtual ICollection<emitente> emitentes { get; set; }
     }
 }

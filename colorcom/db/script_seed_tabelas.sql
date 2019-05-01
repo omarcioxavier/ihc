@@ -1,6 +1,13 @@
-/*
 USE colorcommercedb;
-*/
+
+INSERT INTO categoria (ca_descricao, ca_ca_cod) VALUES
+('Tintas', 1),
+('Tinta Látex', 1),
+('Tinta Acrílica', 1),
+('Tinta Esmalte', 1),
+('Tinta Epóxi', 1),
+('Tinta Especial para textura', 1);
+
 INSERT INTO estado (es_nome, es_uf) VALUES
 ('Acre', 'AC'),
 ('Alagoas', 'AL'),
@@ -30,6 +37,14 @@ INSERT INTO estado (es_nome, es_uf) VALUES
 ('São Paulo', 'SP'),
 ('Tocantins', 'TO');
 
-/*
-SELECT * FROM estado;
-*/
+INSERT INTO tipoEmitente (te_descricao) VALUES
+('Pessoa Física'),
+('Pessoa Jurídica');
+
+INSERT INTO tipoUsuario (tu_descricao) VALUES
+('Administrador'),
+('Usuário');
+
+INSERT INTO unidadeMedida (um_sigla, um_descricao) VALUES
+('un','Unidade'),
+('kg','Quilo');

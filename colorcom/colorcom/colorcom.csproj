@@ -146,13 +146,14 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Item\ItemController.cs" />
+    <Compile Include="Controllers\Usuario\UsuarioController.cs" />
     <Compile Include="DAL\colorcomContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905011442480_InitialMigration.cs" />
-    <Compile Include="Migrations\201905011442480_InitialMigration.Designer.cs">
-      <DependentUpon>201905011442480_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201905011744394_FirstMigration.cs" />
+    <Compile Include="Migrations\201905011744394_FirstMigration.Designer.cs">
+      <DependentUpon>201905011744394_FirstMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Emitente\emitente.cs" />
@@ -547,6 +548,7 @@
     <Content Include="Views\Shared\_SideBar.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Item\Index.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -563,8 +565,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905011442480_InitialMigration.resx">
-      <DependentUpon>201905011442480_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201905011744394_FirstMigration.resx">
+      <DependentUpon>201905011744394_FirstMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

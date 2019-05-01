@@ -21,10 +21,13 @@ namespace colorcom.Models.Usuario
 
         public bool us_status { get; set; }
 
-        public tipoUsuario us_tu_cod { get; set; }
+        public int us_tu_cod { get; set; }
 
-        public ICollection<pedido> pedidos { get; set; }
+        [ForeignKey("us_tu_cod")]
+        public tipoUsuario tipoUsuario { get; set; }
 
-        public ICollection<entradaNF> entradasNF { get; set; }
+        public virtual ICollection<pedido> pedidos { get; set; }
+
+        public virtual ICollection<entradaNF> entradasNF { get; set; }
     }
 }

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<colorcom.Models.Usuario.usuario>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tipoUsuario.tu_descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.us_login)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.us_senha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.us_status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipoUsuario.tu_descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.us_login)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.us_senha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.us_status)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.us_cod }) |
+            @Html.ActionLink("Details", "Details", new { id=item.us_cod }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.us_cod })
+        </td>
+    </tr>
+}
+
+</table>

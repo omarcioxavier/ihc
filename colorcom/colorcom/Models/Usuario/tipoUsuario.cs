@@ -13,6 +13,6 @@ namespace colorcom.Models.Usuario
         [MaxLength(100)]
         public string tu_descricao { get; set; }
 
-        public ICollection<usuario> usuarios { get; set; }
+        public virtual ICollection<usuario> usuarios { get; set; }
     }
 }

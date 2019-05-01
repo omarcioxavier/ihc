@@ -18,6 +18,9 @@ namespace colorcom.Models.Pedidos
         [Required]
         public int ip_quantidade { get; set; }
 
-        public item ip_it_cod { get; set; }
+        public int ip_it_cod { get; set; }
+
+        [ForeignKey("ip_it_cod")]
+        public virtual item item { get; set; }
     }
 }
