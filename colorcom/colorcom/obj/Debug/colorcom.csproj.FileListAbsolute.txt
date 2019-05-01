@@ -88,3 +88,5 @@ F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csproj.
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.dll
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.pdb
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csprojAssemblyReference.cache
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.Migrations.InitialMigration.resources
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csproj.GenerateResource.cache

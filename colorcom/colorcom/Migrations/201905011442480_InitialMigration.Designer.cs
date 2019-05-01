@@ -13,7 +13,7 @@ namespace colorcom.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201905011426034_InitialMigration"; }
+            get { return "201905011442480_InitialMigration"; }
         }
         
         string IMigrationMetadata.Source
