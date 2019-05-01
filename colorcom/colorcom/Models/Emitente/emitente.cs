@@ -11,7 +11,6 @@ namespace colorcom.Models.Emitente
     [Table("emitente")]
     public class emitente
     {
-        //TABELA
         [Key]
         public int em_cod { get; set; }
 
@@ -43,16 +42,9 @@ namespace colorcom.Models.Emitente
         [Index(IsUnique = true)]
         public string em_inscricaoEstadual { get; set; }
 
-        [Required]
-        public int em_te_cod { get; set; }
+        public cidade em_ci_cod { get; set; }
 
-        [Required]
-        public int em_ci_cod { get; set; }
-
-        //OBJETOS
-        public cidade cidade { get; set; }
-
-        public tipoEmitente tipoEmitente { get; set; }
+        public tipoEmitente em_te_cod { get; set; }
 
         public ICollection<pedido> pedidos { get; set; }
 

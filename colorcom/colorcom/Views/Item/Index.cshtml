@@ -1,10 +1,10 @@
-﻿@model ICollection<colorcom.Models.Item.item>
+﻿@model IEnumerable<colorcom.Models.Item.item>
 
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.it_cod)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.ti_titulo)
         </th>
@@ -41,51 +41,47 @@
         <th></th>
     </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.it_cod)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ti_titulo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.it_descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.it_ean)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.it_preco_compra)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.it_preco_venda)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.it_min)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.it_max)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.it_quantidade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.it_status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.it_ca_cod)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.it_um_cod)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-    }
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ti_titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it_descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it_ean)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it_preco_compra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it_preco_venda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it_min)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it_max)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it_quantidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it_status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it_ca_cod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it_um_cod)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.it_cod }) |
+            @Html.ActionLink("Details", "Details", new { id=item.it_cod }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.it_cod })
+        </td>
+    </tr>
+}
 
 </table>

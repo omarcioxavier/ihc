@@ -8,12 +8,11 @@ namespace colorcom.Models.Item
     [Table("item")]
     public class item
     {
-        //TABELA
         [Key]
         public int it_cod { get; set; }
 
         [MaxLength(100)]
-        public string ti_titulo { get; set; }
+        public string it_titulo { get; set; }
 
         [MaxLength(100)]
         public string it_descricao { get; set; }
@@ -34,16 +33,9 @@ namespace colorcom.Models.Item
 
         public bool it_status { get; set; }
 
-        [Required]
-        public int it_ca_cod { get; set; }
+        public categoria it_ca_cod { get; set; }
 
-        [Required]
-        public int it_um_cod { get; set; }
-
-        //OBJETOS
-        public categoria categoria { get; set; }
-
-        public unidadeMedida unidadeMedida { get; set; }
+        public unidadeMedida it_um_cod { get; set; }
 
         public ICollection<logItem> logsItem { get; set; }
 

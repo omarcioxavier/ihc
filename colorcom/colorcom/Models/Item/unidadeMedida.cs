@@ -7,7 +7,6 @@ namespace colorcom.Models.Item
     [Table("unidadeMedida")]
     public class unidadeMedida
     {
-        //TABELA
         [Key]
         public int um_cod { get; set; }
 
@@ -17,7 +16,6 @@ namespace colorcom.Models.Item
         [MaxLength(100)]
         public string um_descricao { get; set; }
 
-        //OBJETOS
         public ICollection<item> itens { get; set; }
     }
 }

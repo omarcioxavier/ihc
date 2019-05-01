@@ -9,7 +9,6 @@ namespace colorcom.Models.Usuario
     [Table("usuario")]
     public class usuario
     {
-        //TABELA
         [Key]
         public int us_cod { get; set; }
 
@@ -22,12 +21,7 @@ namespace colorcom.Models.Usuario
 
         public bool us_status { get; set; }
 
-        [Required]
-        public int us_tu_cod { get; set; }
-
-        //OBJETOS
-
-        public tipoUsuario tipoUsuario { get; set; }
+        public tipoUsuario us_tu_cod { get; set; }
 
         public ICollection<pedido> pedidos { get; set; }
 
