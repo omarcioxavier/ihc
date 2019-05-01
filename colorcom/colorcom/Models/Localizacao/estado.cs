@@ -7,7 +7,6 @@ namespace colorcom.Models.Localizacao
     [Table("estado")]
     public class estado
     {
-        //TABELA
         [Key]
         public int es_cod { get; set; }
 
@@ -17,7 +16,6 @@ namespace colorcom.Models.Localizacao
         [MaxLength(2)]
         public string es_uf { get; set; }
 
-        //OBJETOS
         public ICollection<cidade> cidades { get; set; }
     }
 }

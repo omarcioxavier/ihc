@@ -7,7 +7,6 @@ namespace colorcom.Models.Pedidos
     [Table("itensPedido")]
     public class itensPedido
     {
-        //TABELA
         [Key]
         public int ip_cod { get; set; }
 
@@ -19,10 +18,6 @@ namespace colorcom.Models.Pedidos
         [Required]
         public int ip_quantidade { get; set; }
 
-        [Required]
-        public int ip_it_cod { get; set; }
-
-        //OBJETOS
-        public item item { get; set; }
+        public item ip_it_cod { get; set; }
     }
 }

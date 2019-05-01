@@ -20,8 +20,8 @@ namespace colorcom.Controllers.Item
         public ActionResult Index()
         {
             var itens = _context.itens
-                .Include(i => i.categoria)
-                .Include(i => i.unidadeMedida)
+                .Include(i => i.it_ca_cod)
+                .Include(i => i.it_um_cod)
                 .ToList();
             return View(itens);
         }

@@ -9,7 +9,6 @@ namespace colorcom.Models.Pedidos
     [Table("pedido")]
     public class pedido
     {
-        //TABELA
         [Key]
         public int pe_cod { get; set; }
 
@@ -17,20 +16,10 @@ namespace colorcom.Models.Pedidos
 
         public DateTime pe_dataHora { get; set; }
 
-        [Required]
-        public int pe_us_cod { get; set; }
+        public usuario pe_us_cod { get; set; }
 
-        [Required]
-        public int pe_em_cod { get; set; }
+        public emitente pe_em_cod { get; set; }
 
-        [Required]
-        public int pe_ip_cod { get; set; }
-
-        //OBJETOS
-        public usuario usuario { get; set; }
-
-        public emitente emitente { get; set; }
-
-        public itensPedido itensPedido { get; set; }
+        public itensPedido pe_ip_cod { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using colorcom.Models.Emitente;
 using colorcom.Models.Estoque;
+using colorcom.Models.Localizacao;
 using colorcom.Models.Usuario;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,6 @@ namespace colorcom.Models.NotaFiscal
     [Table("entradaNF")]
     public class entradaNF
     {
-        //TABELA
         [Key]
         public int en_cod { get; set; }
 
@@ -26,19 +26,11 @@ namespace colorcom.Models.NotaFiscal
         [MaxLength(100)]
         public string en_endereco { get; set; }
 
-        [Required]
-        public int en_us_cod { get; set; }
+        public usuario en_us_cod { get; set; }
 
-        [Required]
-        public int en_em_cod { get; set; }
+        public emitente en_em_cod { get; set; }
 
-        [Required]
-        public int en_ci_cod { get; set; }
-
-        //OBJETOS
-        public usuario usuario { get; set; }
-
-        public emitente emitente { get; set; }
+        public cidade en_ci_cod { get; set; }
 
         public ICollection<movimentoEstoque> moviemntosEstoque { get; set; }
     }

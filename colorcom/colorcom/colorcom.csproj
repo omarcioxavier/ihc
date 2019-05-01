@@ -150,9 +150,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904300038449_FirstMigration.cs" />
-    <Compile Include="Migrations\201904300038449_FirstMigration.Designer.cs">
-      <DependentUpon>201904300038449_FirstMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201905011426034_InitialMigration.cs" />
+    <Compile Include="Migrations\201905011426034_InitialMigration.Designer.cs">
+      <DependentUpon>201905011426034_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Emitente\emitente.cs" />
@@ -563,8 +563,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904300038449_FirstMigration.resx">
-      <DependentUpon>201904300038449_FirstMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201905011426034_InitialMigration.resx">
+      <DependentUpon>201905011426034_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
