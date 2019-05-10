@@ -6,7 +6,6 @@
     <title>Color Com</title>
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/Content/css")
-    @Styles.Render("~/Content/themify-icons")
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="icon" href="~/Content/images/colocom.ico" ) />
 
@@ -18,9 +17,7 @@
         @RenderBody()
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/assets")
+    @Scripts.Render("~/bundles/lib")
     @RenderSection("scripts", required: false)
 </body>
 </html>

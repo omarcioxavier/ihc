@@ -48,3 +48,7 @@ INSERT INTO tipoUsuario (tu_descricao) VALUES
 INSERT INTO unidadeMedida (um_sigla, um_descricao) VALUES
 ('un','Unidade'),
 ('kg','Quilo');
+
+INSERT INTO usuario (us_login, us_senha,us_status, us_tu_cod) VALUES
+('admin','admin', 1, 1),
+('user','user', 1, 2);

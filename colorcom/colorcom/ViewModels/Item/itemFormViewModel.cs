@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace colorcom.ViewModels.Item
 {
-    public class itemFormViewModel
+    public class ItemFormViewModel
     {
         public IEnumerable<categoria> categorias { get; set; }
         public IEnumerable<unidadeMedida> unidadesMedida { get; set; }
