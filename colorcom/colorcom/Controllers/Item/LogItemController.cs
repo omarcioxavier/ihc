@@ -1,5 +1,4 @@
 ﻿using colorcom.DAL;
-using colorcom.Models.Estoque;
 using colorcom.Models.Item;
 using System;
 using System.Linq;
