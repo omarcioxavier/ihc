@@ -19,6 +19,8 @@ namespace colorcom.Models.NotaFiscal
 
         public int en_serie { get; set; }
 
+        public bool en_status { get; set; }
+
         public DateTime en_dataEntrada { get; set; }
 
         public DateTime en_dataEmissao { get; set; }

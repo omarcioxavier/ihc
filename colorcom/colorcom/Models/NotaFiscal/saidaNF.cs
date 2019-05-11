@@ -9,12 +9,15 @@ namespace colorcom.Models.NotaFiscal
     [Table("saidaNF")]
     public class saidaNF
     {
+
         [Key]
         public int sn_cod { get; set; }
 
         public int sn_numero { get; set; }
 
         public int sn_serie { get; set; }
+
+        internal object sn_status { get; set; }
 
         public int sn_pe_cod { get; set; }
 
