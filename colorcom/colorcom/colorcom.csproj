@@ -274,7 +274,9 @@
     <Content Include="Content\DataTables\css\fixedHeader.semanticui.css" />
     <Content Include="Content\DataTables\css\fixedHeader.semanticui.min.css" />
     <Content Include="Content\DataTables\css\jquery.dataTables.css" />
-    <Content Include="Content\DataTables\css\jquery.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\jquery.dataTables.min.css">
+      <DependentUpon>jquery.dataTables.css</DependentUpon>
+    </Content>
     <Content Include="Content\DataTables\css\jquery.dataTables_themeroller.css" />
     <Content Include="Content\DataTables\css\keyTable.bootstrap.css" />
     <Content Include="Content\DataTables\css\keyTable.bootstrap.min.css" />
@@ -481,6 +483,7 @@
     <Content Include="Content\themify-icons\fonts\themify.eot" />
     <Content Include="Content\themify-icons\fonts\themify.ttf" />
     <Content Include="Content\themify-icons\fonts\themify.woff" />
+    <None Include="bundleconfig.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\flot\excanvas.js" />
     <Content Include="Scripts\flot\excanvas.min.js" />
