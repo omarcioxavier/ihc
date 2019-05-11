@@ -90,3 +90,4 @@ F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.pdb
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csprojAssemblyReference.cache
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.Migrations.FirstMigration.resources
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csproj.GenerateResource.cache
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.Migrations.ColunaStatusNF.resources

@@ -161,6 +161,10 @@
     <Compile Include="Migrations\201905011744394_FirstMigration.Designer.cs">
       <DependentUpon>201905011744394_FirstMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905110105084_ColunaStatusNF.cs" />
+    <Compile Include="Migrations\201905110105084_ColunaStatusNF.Designer.cs">
+      <DependentUpon>201905110105084_ColunaStatusNF.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Emitente\emitente.cs" />
     <Compile Include="Models\Emitente\tipoEmitente.cs" />
@@ -581,6 +585,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201905011744394_FirstMigration.resx">
       <DependentUpon>201905011744394_FirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905110105084_ColunaStatusNF.resx">
+      <DependentUpon>201905110105084_ColunaStatusNF.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
