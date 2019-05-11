@@ -17,7 +17,7 @@ namespace colorcom.Models.NotaFiscal
 
         public int sn_serie { get; set; }
 
-        internal object sn_status { get; set; }
+        public int sn_status { get; set; }
 
         public int sn_pe_cod { get; set; }
 
