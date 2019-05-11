@@ -1,0 +1,8 @@
+[
+  {
+    "outputFileName": "Content/DataTables/css/jquery.dataTables.min.css",
+    "inputFiles": [
+      "Content/DataTables/css/jquery.dataTables.css"
+    ]
+  }
+]

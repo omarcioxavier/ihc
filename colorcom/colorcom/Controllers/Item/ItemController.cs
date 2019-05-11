@@ -107,6 +107,27 @@ namespace colorcom.Controllers.Item
             return RedirectToAction("Index", "Item");
         }
 
+        // Inativar: item
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AtivarInativar(item item)
+        {
+            var itemExistente = _context.itens.Single(i => i.it_cod == item.it_cod);
+
+            itemExistente.it_status = item.it_status;
+
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                return RedirectToAction("New", "Item");
+            }
+
+            return RedirectToAction("Index", "Item");
+        }
+
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {

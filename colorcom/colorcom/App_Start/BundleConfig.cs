@@ -9,6 +9,7 @@ namespace colorcom
         {
             bundles.Add(new ScriptBundle("~/bundles/lib").Include(
                 "~/Scripts/jquery-{version}.js",
+                "~/Scripts/jquery.min.js",
                 "~/Scripts/jquery-{version}.min.js",
                 "~/Scripts/DataTables/jquery.dataTables.js",
                 "~/Scripts/DataTables/dataTables.bootstrap.js",
@@ -18,9 +19,7 @@ namespace colorcom
                 "~/Scripts/Chart.min.js",
                 "~/Scripts/popper.min.js",
                 "~/Scripts/bootstrap.js",
-                "~/Scripts/bootstrap.min.js"
-
-                ));
+                "~/Scripts/bootstrap.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                 "~/Scripts/jquery.validate*"));

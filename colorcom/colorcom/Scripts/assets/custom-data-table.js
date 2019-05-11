@@ -1,31 +1,25 @@
-﻿$(document).ready(function () {
-    $('.data-table').DataTable();
-});
-//$('.data-table').each(function () {
-//    var attrTitle = $(this).attr('title');
-//    var title = attrTitle === null ? document.title : attrTitle;
-
-//    var oTable = $(this).dataTable({
-//        dom: "B<'#colvis row'><'row'><'row'<'col-md-6'l><'col-md-6'f>r>tip",
-//        destroy: true,
-//        order: [0, 'desc'],
+﻿//$(document).ready(function () {
+//    $.fn.dataTable.moment('DD/MM/YYYY HH:mm:ss');
+//    $.fn.dataTable.moment('DD/MM/YYYY');
+//    $.fn.dataTable.moment('HH:mm:ss');
+//    $.fn.dataTable.Buttons.defaults.dom.button.className = 'btn btn-default btn-sm';
+//    $(this).css("width", "100%");
+//    $('.data-table').DataTable({
+//        dom: 'Bfrtip',
+//        sScrollX: "auto",
+//        bScrollCollapse: true,
+//        bPaginate: true,
 //        buttons: [
 //            {
 //                extend: 'colvis',
 //                collectionLayout: 'fixed two-column',
-//                text: 'Colunas'
-//            },
-//            {
-//                extend: 'csvHtml5',
-//                footer: true,
+//                text: 'Colunas',
 //                exportOptions: {
 //                    columns: ':visible'
 //                }
 //            },
 //            {
 //                extend: 'excelHtml5',
-//                footer: true,
-//                title: title,
 //                exportOptions: {
 //                    columns: ':visible',
 //                    format: {
@@ -42,18 +36,13 @@
 //                exportOptions: {
 //                    columns: ':visible'
 //                }
-//            }]
-//        ,
-//        "lengthMenu": [
-//            [10, 30, 50, 100, -1],
-//            [10, 30, 50, 100, "Todos"]
+//            }
 //        ],
+//        "pageLength": 10,
 //        "language": {
 //            url: '//cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json',
 //            decimal: ",",
-//            thousands: ".",
-//        },
-//        "scrollX": "auto",
-//        "fixedHeader": true
-//    })
+//            thousands: "."
+//        }
+//    });
 //});
