@@ -150,6 +150,8 @@
     <Compile Include="Controllers\Item\CategoriaController.cs" />
     <Compile Include="Controllers\Item\ItemController.cs" />
     <Compile Include="Controllers\Item\LogItemController.cs" />
+    <Compile Include="Controllers\NotaFiscal\SaidaNFController.cs" />
+    <Compile Include="Controllers\NotaFiscal\EntradaNFController.cs" />
     <Compile Include="Controllers\Usuario\UsuarioController.cs" />
     <Compile Include="DAL\colorcomContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -179,6 +181,8 @@
     <Compile Include="ViewModels\Emitente\EmitenteFormViewModel.cs" />
     <Compile Include="ViewModels\Item\CategoriaFormViewModel.cs" />
     <Compile Include="ViewModels\Item\ItemFormViewModel.cs" />
+    <Compile Include="ViewModels\NotaFiscal\SaidaNFFormViewModel.cs" />
+    <Compile Include="ViewModels\NotaFiscal\EntradaNFFormViewModel.cs" />
     <Compile Include="ViewModels\Usuario\UsuarioFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -560,6 +564,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\EntradaNF\" />
     <Folder Include="Views\Estoque\" />
   </ItemGroup>
   <ItemGroup>
