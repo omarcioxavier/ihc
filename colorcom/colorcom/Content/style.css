@@ -1,32 +1,15 @@
-﻿/* This css file is to over write bootstrap css
---------------------------------------------------------- /
-* Theme Name: Sufee-Admin Admin Template
-* Theme URI: http://demos.jeweltheme.com/Sufee-Admin/
-* Author: jewel_theme
-* Author URI: http://themeforest.net/user/jewel_theme/portfolio
-* Description:
-* Version: 1.0.0
-* License: GNU General Public License v2 or later
-* License URI: http://www.gnu.org/licenses/gpl-2.0.html
-* Tags: html, themplate, Sufee-Admin
---------------------------------------------------------- */
-/* Bootstrap */
-@charset "UTF-8";
-
-/*!
- * animate.css -http://daneden.me/animate
- * Version - 3.7.0
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2018 Daniel Eden
- */
-
-/*PERSONALIZADO*/
+﻿/*PERSONALIZADOS*/
 .fit-column {
     white-space: nowrap;
     width: 1%;
 }
 
+.red {
+    background-color: #e82727;
+    color: #e82727;
+}
+
+/*FIM PERSONALIZADOS*/
 @-webkit-keyframes bounce {
     0%,20%,53%,80%,to {
         -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);

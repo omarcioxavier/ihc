@@ -41,8 +41,12 @@ namespace colorcom.Controllers.Item
         // New: Item
         public ActionResult New()
         {
+            var categorias = _context.categorias.ToList();
+            var unidadesMedida = _context.unidadesMedida.ToList();
             var viewModel = new ItemFormViewModel()
             {
+                categorias = categorias,
+                unidadesMedida = unidadesMedida,
                 item = new item()
             };
             return View("ItemForm", viewModel);
@@ -59,6 +63,8 @@ namespace colorcom.Controllers.Item
             }
             var viewModel = new ItemFormViewModel
             {
+                categorias = _context.categorias.ToList(),
+                unidadesMedida = _context.unidadesMedida.ToList(),
                 item = item
             };
 
