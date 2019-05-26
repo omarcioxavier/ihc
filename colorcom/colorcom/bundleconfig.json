@@ -4,5 +4,11 @@
     "inputFiles": [
       "Content/DataTables/css/jquery.dataTables.css"
     ]
+  },
+  {
+    "outputFileName": "Content/style.min.css",
+    "inputFiles": [
+      "Content/style.css"
+    ]
   }
 ]

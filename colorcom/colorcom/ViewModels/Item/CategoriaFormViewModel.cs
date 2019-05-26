@@ -14,7 +14,7 @@ namespace colorcom.ViewModels.Item
                 {
                     return "Editar categoria";
                 }
-                return "Novo categoria";
+                return "Nova categoria";
             }
         }
     }
