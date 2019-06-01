@@ -1,45 +1,58 @@
 ﻿@model IEnumerable<colorcom.Models.Usuario.usuario>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.tipoUsuario.tu_descricao)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.us_login)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.us_senha)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.us_status)
-        </th>
-        <th></th>
-    </tr>
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <small class="card-title">Usuário > <b>Usuários</b></small>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            @Html.ActionLink("Novo Usuário", "New", "Usuário", null, new { @class = "btn btn-secondary btn-sm" })
+                        </p>
+                        <table class="table table-striped table-bordered table-sm data-table">
+                            <tr>
+                                <th>Ações</th>
+                                <th>Código</th>
+                                <th>Login</th>
+                                <th>Tipo de Usuário</th>
+                                <th>Status</th>
+                            </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.tipoUsuario.tu_descricao)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.us_login)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.us_senha)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.us_status)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.us_cod }) |
-            @Html.ActionLink("Details", "Details", new { id=item.us_cod }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.us_cod })
-        </td>
-    </tr>
-}
-
-</table>
+                            @foreach (var usuario in Model)
+                            {
+                                <tr>
+                                    <td class="fit-column">
+                                        @Html.ActionLink("Editar", "Edit", "Usuario", new { id = usuario.us_cod }, new { @class = "btn btn-primary btn-sm" })
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => usuario.us_cod)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => usuario.us_login)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => usuario.tipoUsuario.tu_descricao)
+                                    </td>
+                                    <td>
+                                        @if (usuario.us_status == true)
+                                        {
+                                            <span class="badge badge-success">Ativo</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge badge-warning">Inativo</span>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/assets/custom-data-table.js"></script>

@@ -165,6 +165,10 @@
     <Compile Include="Migrations\201905110105084_ColunaStatusNF.Designer.cs">
       <DependentUpon>201905110105084_ColunaStatusNF.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905300030342_AjusteCategoria.cs" />
+    <Compile Include="Migrations\201905300030342_AjusteCategoria.Designer.cs">
+      <DependentUpon>201905300030342_AjusteCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Emitente\emitente.cs" />
     <Compile Include="Models\Emitente\tipoEmitente.cs" />
@@ -569,6 +573,9 @@
     <Content Include="Views\Item\Index.cshtml" />
     <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Item\ItemForm.cshtml" />
+    <Content Include="Views\Categoria\CategoriaForm.cshtml" />
+    <Content Include="Views\Categoria\Index.cshtml" />
+    <Content Include="Views\Usuario\UsuarioForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -592,6 +599,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905110105084_ColunaStatusNF.resx">
       <DependentUpon>201905110105084_ColunaStatusNF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905300030342_AjusteCategoria.resx">
+      <DependentUpon>201905300030342_AjusteCategoria.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

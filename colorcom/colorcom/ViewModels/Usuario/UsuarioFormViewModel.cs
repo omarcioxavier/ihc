@@ -1,7 +1,7 @@
 ﻿using colorcom.Models.Usuario;
 using System.Collections.Generic;
 
-namespace colorcom.ViewModels.Item
+namespace colorcom.ViewModels.Usuario
 {
     public class UsuarioFormViewModel
     {
