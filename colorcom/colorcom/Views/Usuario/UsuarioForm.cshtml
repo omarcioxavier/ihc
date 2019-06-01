@@ -1,0 +1,71 @@
+﻿@model colorcom.ViewModels.Usuario.UsuarioFormViewModel
+
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <small class="card-title">Usuários > <b>Usuário > <b>@Model.title</b></b></small>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead">Os campos marcados com <b class="red">*</b> são obrigatórios.</p>
+                        <hr />
+                        @using (Html.BeginForm("Save", "Usuario", new { id = "UsuarioForm" }))
+                        {
+                            @Html.AntiForgeryToken()
+                        <div class="form-horizontal">
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <div class="form-group">
+                                        <label>Código<b class="red">*</b></label>
+                                        @Html.EditorFor(model => model.usuario.us_cod, new { htmlAttributes = new { @class = "form-control form-control-sm col", @id = "TxtUsuarioCod", @maxlength = "100" } })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Login</label>
+                                        @Html.EditorFor(model => model.usuario.us_login, new { htmlAttributes = new { @class = "form-control form-control-sm col", @id = "TxtUsuarioLogin", @maxlength = "100" } })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Senha</label>
+                                        @Html.PasswordFor(model => model.usuario.us_senha, new { htmlAttributes = new { @class = "form-control form-control-sm col", @id = "TxtUsuarioSenha" } })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Tipo de Usuário</label>
+                                        @Html.DropDownListFor(model => model.usuario.us_tu_cod, new SelectList(Model.tiposUsuarios, "tu_cod", "tu_descricao"), "Usuario", new { @class = "form-control-sm form-control col-12", @id = "DropDownTipoUsuario" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <div>
+                                            <label>Status</label>
+                                            @Html.CheckBoxFor(model => model.usuario.us_status, htmlAttributes: new { @id = "SwitchStatus" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                <button type="submit" class="btn btn-primary btn-sm">Salvar</button>
+                                <hr />
+                                @Html.HiddenFor(model => model.usuario.us_cod, new { @id = "us_cod" })
+                                }
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

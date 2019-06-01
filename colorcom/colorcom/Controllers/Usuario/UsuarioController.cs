@@ -5,6 +5,7 @@ using System.Web.Mvc;
 using System.Data.Entity;
 using colorcom.ViewModels.Item;
 using colorcom.Models.Usuario;
+using colorcom.ViewModels.Usuario;
 
 namespace colorcom.Controllers.Usuario
 {

@@ -13,13 +13,6 @@ namespace colorcom.Models.Item
         [MaxLength(100)]
         public string ca_descricao { get; set; }
 
-        public int ca_ca_cod { get; set; }
-
-        [ForeignKey("ca_ca_cod")]
-        public virtual categoria Categoria { get; set; }
-
         public virtual ICollection<item> itens { get; set; }
-
-        public virtual ICollection<categoria> categorias { get; set; }
     }
 }

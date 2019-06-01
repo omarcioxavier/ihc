@@ -79,8 +79,6 @@ namespace colorcom.Controllers.Item
                 var categoriaExistente = _context.categorias.Single(i => i.ca_cod == categoria.ca_cod);
 
                 categoriaExistente.ca_descricao = categoria.ca_descricao;
-
-                categoriaExistente.ca_ca_cod = categoria.ca_ca_cod;
             }
 
             try
