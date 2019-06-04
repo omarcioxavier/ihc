@@ -31,3 +31,9 @@ var SetDisableTextField = () => {
         txtBox[i].disabled = true;
     }
 }
+
+var ConfirmDialog = (texto) => {
+    bootbox.confirm("" + texto + "", function (result) {
+        return;
+    });
+}

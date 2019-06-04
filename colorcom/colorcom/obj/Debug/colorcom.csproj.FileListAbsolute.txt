@@ -186,3 +186,4 @@ F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csproj.
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.csproj.CopyComplete
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.dll
 F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.pdb
+F:\Development\Projects\ASP.NET\ihc\colorcom\colorcom\obj\Debug\colorcom.Migrations.NovosCamposLogItem.resources

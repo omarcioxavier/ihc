@@ -100,7 +100,7 @@ namespace colorcom.Controllers.Item
             categoria categoria = db.categorias.Find(id);
             db.categorias.Remove(categoria);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Categoria");
         }
 
         protected override void Dispose(bool disposing)

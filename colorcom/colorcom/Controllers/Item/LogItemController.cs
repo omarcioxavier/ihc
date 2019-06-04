@@ -27,7 +27,7 @@ namespace colorcom.Controllers.Item
         // Save: Log
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Save(logItem logItem)
+        public void Save(logItem logItem)
         {
             _context.logsItens.Add(logItem);
             try
@@ -37,7 +37,7 @@ namespace colorcom.Controllers.Item
             catch (Exception)
             {
             }
-            return RedirectToAction("Index", "LogItem");
+            //return RedirectToAction("Index", "LogItem");
         }
 
         protected override void Dispose(bool disposing)

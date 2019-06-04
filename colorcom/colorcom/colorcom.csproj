@@ -169,6 +169,10 @@
     <Compile Include="Migrations\201906011621497_AjusteCategoria.Designer.cs">
       <DependentUpon>201906011621497_AjusteCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906040050412_NovosCamposLogItem.cs" />
+    <Compile Include="Migrations\201906040050412_NovosCamposLogItem.Designer.cs">
+      <DependentUpon>201906040050412_NovosCamposLogItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Emitente\emitente.cs" />
     <Compile Include="Models\Emitente\tipoEmitente.cs" />
@@ -376,6 +380,9 @@
     <Content Include="Scripts\assets\dashboard.js" />
     <Content Include="Scripts\assets\main.js" />
     <Content Include="Scripts\assets\widgets.js" />
+    <Content Include="Scripts\bootbox.all.min.js" />
+    <Content Include="Scripts\bootbox.locales.min.js" />
+    <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -579,6 +586,7 @@
     <Content Include="Views\Usuario\UsuarioForm.cshtml" />
     <Content Include="Views\Emitente\EmitenteForm.cshtml" />
     <Content Include="Views\Emitente\Index.cshtml" />
+    <Content Include="Views\LogItem\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -605,6 +613,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906011621497_AjusteCategoria.resx">
       <DependentUpon>201906011621497_AjusteCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906040050412_NovosCamposLogItem.resx">
+      <DependentUpon>201906040050412_NovosCamposLogItem.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
