@@ -14,6 +14,10 @@ namespace colorcom.Models.Item
 
         public DateTime li_dataHora { get; set; }
 
+        public string li_tipo { get; set; }
+
+        public string li_descricao { get; set; }
+
         public int li_it_cod { get; set; }
 
         [ForeignKey("li_it_cod")]

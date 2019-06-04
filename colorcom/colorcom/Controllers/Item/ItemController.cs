@@ -18,6 +18,8 @@ namespace colorcom.Controllers.Item
 
         private colorcomContext _context;
 
+        private LogItemController logController = new LogItemController();
+
         // Get: Item
         public ActionResult Index()
         {
@@ -98,6 +100,17 @@ namespace colorcom.Controllers.Item
 
                 itemExistente.it_ca_cod = item.it_ca_cod;
                 itemExistente.it_um_cod = item.it_um_cod;
+
+                var log = new logItem()
+                {
+                    li_dataHora = DateTime.Now,
+                    li_preco_novo = item.it_preco_venda,
+                    li_tipo = "Edição",
+                    li_descricao = $"Alteração do produto { item.it_titulo }. EAN { item.it_ean }",
+                    li_it_cod = item.it_cod
+                };
+
+                logController.Save(log);
 
             }
 

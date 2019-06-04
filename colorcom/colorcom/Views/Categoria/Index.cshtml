@@ -24,13 +24,14 @@
                                 <tr>
                                     <td class="fit-column">
                                         @Html.ActionLink("Editar", "Edit", "Categoria", new { id = categoria.ca_cod }, new { @class = "btn btn-primary btn-sm" })
+
+                                        @using (Html.BeginForm("Delete", "Categoria", new { id = categoria.ca_cod }))
+                                        {
+                                            <input type="submit" class="btn btn-danger btn-sm" value="Excluir" onclick="confirm('Deseja remover esta categoria?');" />
+                                        }
                                     </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => categoria.ca_cod)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => categoria.ca_descricao)
-                                    </td>
+                                    <td>@Html.DisplayFor(modelItem => categoria.ca_cod)</td>
+                                    <td>@Html.DisplayFor(modelItem => categoria.ca_descricao)</td>
                                 </tr>
                             }
                         </table>

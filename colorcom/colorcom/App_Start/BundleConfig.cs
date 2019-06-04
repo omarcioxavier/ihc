@@ -18,6 +18,8 @@ namespace colorcom
                 "~/Scripts/widget.js",
                 "~/Scripts/Chart.min.js",
                 "~/Scripts/popper.min.js",
+                "~/Scripts/bootbox.min.js",
+                "~/Scripts/bootbox.locales.min.js",
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/bootstrap.min.js"));
 
