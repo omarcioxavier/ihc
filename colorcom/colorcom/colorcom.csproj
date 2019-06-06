@@ -157,21 +157,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905011744394_FirstMigration.cs" />
-    <Compile Include="Migrations\201905011744394_FirstMigration.Designer.cs">
-      <DependentUpon>201905011744394_FirstMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905110105084_ColunaStatusNF.cs" />
-    <Compile Include="Migrations\201905110105084_ColunaStatusNF.Designer.cs">
-      <DependentUpon>201905110105084_ColunaStatusNF.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906011621497_AjusteCategoria.cs" />
-    <Compile Include="Migrations\201906011621497_AjusteCategoria.Designer.cs">
-      <DependentUpon>201906011621497_AjusteCategoria.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906040050412_NovosCamposLogItem.cs" />
-    <Compile Include="Migrations\201906040050412_NovosCamposLogItem.Designer.cs">
-      <DependentUpon>201906040050412_NovosCamposLogItem.cs</DependentUpon>
+    <Compile Include="Migrations\201906052309459_ajustes-necessaiors.cs" />
+    <Compile Include="Migrations\201906052309459_ajustes-necessaiors.Designer.cs">
+      <DependentUpon>201906052309459_ajustes-necessaiors.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Emitente\emitente.cs" />
@@ -605,17 +593,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905011744394_FirstMigration.resx">
-      <DependentUpon>201905011744394_FirstMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905110105084_ColunaStatusNF.resx">
-      <DependentUpon>201905110105084_ColunaStatusNF.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906011621497_AjusteCategoria.resx">
-      <DependentUpon>201906011621497_AjusteCategoria.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906040050412_NovosCamposLogItem.resx">
-      <DependentUpon>201906040050412_NovosCamposLogItem.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906052309459_ajustes-necessaiors.resx">
+      <DependentUpon>201906052309459_ajustes-necessaiors.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

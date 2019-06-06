@@ -14,7 +14,7 @@
                         </p>
                         <table class="table table-striped table-bordered table-sm data-table">
                             <tr>
-                                <th>Ações</th>
+                                <th class="tfit">Ações</th>
                                 <th>Código</th>
                                 <th>Descrição</th>
                             </tr>
@@ -22,13 +22,22 @@
                             @foreach (var categoria in Model)
                             {
                                 <tr>
-                                    <td class="fit-column">
-                                        @Html.ActionLink("Editar", "Edit", "Categoria", new { id = categoria.ca_cod }, new { @class = "btn btn-primary btn-sm" })
+                                    <td class="tfit">
+                                        <div class="row">
+                                            <div class="col-5">
 
-                                        @using (Html.BeginForm("Delete", "Categoria", new { id = categoria.ca_cod }))
-                                        {
-                                            <input type="submit" class="btn btn-danger btn-sm" value="Excluir" onclick="confirm('Deseja remover esta categoria?');" />
-                                        }
+                                                @using (Html.BeginForm("Edit", "Categoria", new { id = categoria.ca_cod }))
+                                                {
+                                                    <input type="submit" class="btn btn-primary btn-sm ml-2" value="Editar" />
+                                                }
+                                            </div>
+                                            <div class="col-5">
+                                                @using (Html.BeginForm("Delete", "Categoria", new { id = categoria.ca_cod }))
+                                                {
+                                                    <input type="submit" class="btn  btn-danger btn-sm" value="Excluir" onclick="return confirm(' Remover categoria @categoria.ca_descricao? ')" />
+                                                }
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>@Html.DisplayFor(modelItem => categoria.ca_cod)</td>
                                     <td>@Html.DisplayFor(modelItem => categoria.ca_descricao)</td>
